@@ -25,9 +25,9 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: django/Dockerfile
+          file: project/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops:1.0
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/final:1.0
 
 # name: deploy
 # on:
@@ -56,8 +56,8 @@ jobs:
       - name: deployment to eks
         run: |
          kubectl get ns
-         kubectl apply -f django/kubernetes/dep.yml
-         kubectl apply -f django/kubernetes/service.yml
+         kubectl apply -f project/dep.yml
+         kubectl apply -f project/service.yml
          kubectl get pods
        
  
