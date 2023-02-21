@@ -8,7 +8,7 @@ spec:
     source:
         repoURL: https://github.com/Karandeep0280/gitops.git
         targetRevision: HEAD
-        path: gitops       
+        path: project   
     destination:
         server: https://kubernetes.default.svc
         namespace: gagan1    
@@ -20,4 +20,3 @@ spec:
         automated:
             selfHeal: true
             prune: true
-            
