@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: gitops
-        image: sainigagan29/final:1.1
+        image: sainigagan29/final:1.0
         imagePullPolicy : Always
         ports:
         - containerPort: 8000
