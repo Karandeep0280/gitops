@@ -27,7 +27,7 @@ jobs:
           context: .
           file: project/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/final:1.1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/final:1.0
 
 # name: deploy
 # on:
